@@ -43,7 +43,7 @@ export function MusicPlayer({ visible }: MusicPlayerProps) {
         <span className="mi">{playing ? '❚❚' : '♪'}</span>
         <span className="ml">Perfect</span>
       </button>
-      <audio ref={audioRef} src="/assets/audio/hb128.mp3" loop preload="none" />
+      <audio ref={audioRef} src={`${import.meta.env.BASE_URL}assets/audio/hb128.mp3`} loop preload="none" />
     </>
   )
 }

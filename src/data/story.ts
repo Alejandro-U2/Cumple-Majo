@@ -1,11 +1,11 @@
 import type { PolarImage, ReasonItem } from '@/types'
 
 export const polarImages: PolarImage[] = [
-  { src: '/assets/images/Foto1.jpeg', alt: 'Foto 1', caption: 'Contigo, siempre' },
-  { src: '/assets/images/Foto2.jpeg', alt: 'Foto 2', caption: 'Mi lugar favorito' },
-  { src: '/assets/images/Foto3.jpeg', alt: 'Foto 3', caption: 'Esta sonrisa' },
-  { src: '/assets/images/Foto4.jpeg', alt: 'Foto 4', caption: 'Nuestra historia' },
-  { src: '/assets/images/Foto5.jpeg', alt: 'Foto 5', caption: 'Y los que faltan por vivir' },
+  { src: `${import.meta.env.BASE_URL}assets/images/Foto1.jpeg`, alt: 'Foto 1', caption: 'Contigo, siempre' },
+  { src: `${import.meta.env.BASE_URL}assets/images/Foto2.jpeg`, alt: 'Foto 2', caption: 'Mi lugar favorito' },
+  { src: `${import.meta.env.BASE_URL}assets/images/Foto3.jpeg`, alt: 'Foto 3', caption: 'Esta sonrisa' },
+  { src: `${import.meta.env.BASE_URL}assets/images/Foto4.jpeg`, alt: 'Foto 4', caption: 'Nuestra historia' },
+  { src: `${import.meta.env.BASE_URL}assets/images/Foto5.jpeg`, alt: 'Foto 5', caption: 'Y los que faltan por vivir' },
 ]
 
 export const reasons: ReasonItem[] = [

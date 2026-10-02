@@ -115,15 +115,16 @@ export function ScrollStory({ heroRef, progressRef }: ScrollStoryProps) {
         <div className="people-grid">
           {Array.from({ length: 12 }, (_, index) => {
             const number = String(index + 1).padStart(2, '0')
+            const publicAssets = `${import.meta.env.BASE_URL}assets/`
             const letterSrc = index === 1
-              ? '/assets/pdf/cartaPersona2.jpeg'
-              : `/assets/pdf/cartaPersona${index + 1}.pdf`
+              ? `${publicAssets}pdf/cartaPersona2.jpeg`
+              : `${publicAssets}pdf/cartaPersona${index + 1}.pdf`
             const letterType = index === 1 ? 'image' : 'pdf'
             return (
               <article className="person-card" key={number}>
                 <span className="photo-placeholder" aria-hidden="true">{number}</span>
                 <img
-                  src={`/assets/images/persona${index + 1}.jpeg`}
+                  src={`${publicAssets}images/persona${index + 1}.jpeg`}
                   alt={`Fotografía de una persona que te ama, ${number}`}
                   loading="lazy"
                   onError={(event) => { event.currentTarget.style.display = 'none' }}
